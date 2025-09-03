@@ -1306,14 +1306,14 @@ section,
 
 /* Extra Small Screens (Mobiles < 768px) */
 @media (max-width: 767px) {
-  .purecounter{
+.stats .stats-item .purecounter{
     font-size: 30px;
   }
 }
 
 /* Very Small Screens (Small Phones < 480px) */
 @media (max-width: 480px) {
-  .purecounter{
+  .stats .stats-item .purecounter{
     font-size: 30px;
   }
 }
