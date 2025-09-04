@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://swastikdharpure.github.io/Protfolio/sitemap.xml
+Sitemap: https://swastikdharpure.github.io/Portfolio/sitemap.xml
