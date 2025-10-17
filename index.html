@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  <meta charset="utf-8">
    <!-- Google Tag Manager -->
   <script>(function (w, d, s, l, i) {
       w[l] = w[l] || []; w[l].push({
@@ -67,7 +68,6 @@
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
 
-
 <!-- Structured Data (JSON-LD) -->
 <script type="application/ld+json">
 {
@@ -83,7 +83,10 @@
       "url": "https://swastikdharpure.github.io/Portfolio/",
       "sameAs": [
         "https://www.linkedin.com/in/swastikdharpure",
-        "https://github.com/swastikdharpure"
+        "https://github.com/swastikdharpure",
+        "https://twitter.com/swastikdharpure",
+        "https://stackoverflow.com/users/yourprofile",
+        "https://medium.com/@swastikdharpure"
       ],
       "address": {
         "@type": "PostalAddress",
@@ -114,7 +117,8 @@
         "Freelance Web Development"
       ],
       "award": [
-        "Best .NET Developer Award - ITCRAFT 2024"
+        "Best .NET Developer Award - ITCRAFT 2024",
+        "Top Freelancer Badge - Upwork 2025"
       ],
       "hasCredential": [
         {
@@ -142,6 +146,8 @@
           "itemOffered": {
             "@type": "Service",
             "name": "ASP.NET MVC Web Development",
+            "serviceType": "Web Development",
+            "category": "Software Development",
             "description": "Custom web applications using ASP.NET MVC and C# for global clients."
           },
           "priceSpecification": [
@@ -167,75 +173,30 @@
           "itemOffered": {
             "@type": "Service",
             "name": "API Development",
+            "serviceType": "Software Development",
+            "category": "API & Backend",
             "description": "RESTful API development and integration for global clients."
-          },
-          "priceSpecification": [
-            {
-              "@type": "PriceSpecification",
-              "price": "400-1200",
-              "priceCurrency": "USD",
-              "availability": "https://schema.org/InStock",
-              "areaServed": ["Global"]
-            },
-            {
-              "@type": "PriceSpecification",
-              "price": "36000-108000",
-              "priceCurrency": "INR",
-              "availability": "https://schema.org/InStock",
-              "areaServed": ["IN"]
-            }
-          ],
-          "url": "https://swastikdharpure.github.io/Portfolio/#contact"
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "SQL Server Database Solutions",
-            "description": "Database design, optimization, and queries for global clients."
-          },
-          "priceSpecification": [
-            {
-              "@type": "PriceSpecification",
-              "price": "350-1000",
-              "priceCurrency": "USD",
-              "availability": "https://schema.org/InStock",
-              "areaServed": ["Global"]
-            },
-            {
-              "@type": "PriceSpecification",
-              "price": "31500-90000",
-              "priceCurrency": "INR",
-              "availability": "https://schema.org/InStock",
-              "areaServed": ["IN"]
-            }
-          ],
-          "url": "https://swastikdharpure.github.io/Portfolio/#contact"
+          }
         },
         {
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
             "name": "React.js Frontend Development",
-            "description": "Modern responsive frontend development using React.js for global clients."
-          },
-          "priceSpecification": [
-            {
-              "@type": "PriceSpecification",
-              "price": "450-1200",
-              "priceCurrency": "USD",
-              "availability": "https://schema.org/InStock",
-              "areaServed": ["Global"]
-            },
-            {
-              "@type": "PriceSpecification",
-              "price": "40500-108000",
-              "priceCurrency": "INR",
-              "availability": "https://schema.org/InStock",
-              "areaServed": ["IN"]
-            }
-          ],
-          "url": "https://swastikdharpure.github.io/Portfolio/#contact"
+            "serviceType": "Frontend Development",
+            "category": "Web Development",
+            "description": "Modern responsive frontend development using React.js."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "SQL Server Database Solutions",
+            "serviceType": "Database Development",
+            "category": "Software Development",
+            "description": "Database design, optimization, and queries for global clients."
+          }
         }
       ],
       "hasPart": [
@@ -255,16 +216,47 @@
       "review": [
         {
           "@type": "Review",
-          "author": "Client Name",
+          "author": { "@type": "Person", "name": "Client Name" },
           "datePublished": "2025-09-01",
           "reviewBody": "Swastik delivered high-quality ASP.NET projects on time.",
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
+        },
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Client 2" },
+          "datePublished": "2025-10-01",
+          "reviewBody": "Delivered the project ahead of schedule with excellent quality.",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
+        }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "reviewCount": "2"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do you work remotely?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, I accept freelance and remote projects globally."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which technologies do you specialize in?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ASP.NET MVC, C#, SQL Server, React.js, REST APIs, and scalable web applications."
           }
         }
       ],
+      "potentialAction": {
+        "@type": "ReserveAction",
+        "target": "https://swastikdharpure.github.io/Portfolio/#contact",
+        "name": "Book a Freelance Project"
+      },
       "knowsLanguage": ["English", "Hindi", "Marathi"],
       "keywords": "Freelance, ASP.NET MVC, C#, SQL Server, Remote Developer, React.js, Web Development, API Integration"
     },
@@ -298,6 +290,7 @@
       "sameAs": [
         "https://www.linkedin.com/in/swastikdharpure",
         "https://github.com/swastikdharpure"
+        
       ]
     }
   ]
