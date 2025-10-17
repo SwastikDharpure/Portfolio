@@ -67,7 +67,6 @@
 
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
-
 <!-- Structured Data (JSON-LD) -->
 <script type="application/ld+json">
 {
@@ -117,8 +116,18 @@
         "Freelance Web Development"
       ],
       "award": [
-        "Best .NET Developer Award - ITCRAFT 2024",
-        "Top Freelancer Badge - Upwork 2025"
+        {
+          "@type": "Award",
+          "name": "Best .NET Developer Award - ITCRAFT 2024",
+          "awarder": { "@type": "Organization", "name": "ITCRAFT" },
+          "dateReceived": "2024"
+        },
+        {
+          "@type": "Award",
+          "name": "Top Freelancer Badge - Upwork 2025",
+          "awarder": { "@type": "Organization", "name": "Upwork" },
+          "dateReceived": "2025"
+        }
       ],
       "hasCredential": [
         {
@@ -129,88 +138,6 @@
             "@type": "Organization",
             "name": "Microsoft"
           }
-        }
-      ],
-      "jobLocation": {
-        "@type": "Place",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Nagpur",
-          "addressRegion": "Maharashtra",
-          "addressCountry": "India"
-        }
-      },
-      "makesOffer": [
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "ASP.NET MVC Web Development",
-            "serviceType": "Web Development",
-            "category": "Software Development",
-            "description": "Custom web applications using ASP.NET MVC and C# for global clients."
-          },
-          "priceSpecification": [
-            {
-              "@type": "PriceSpecification",
-              "price": "500-1500",
-              "priceCurrency": "USD",
-              "availability": "https://schema.org/InStock",
-              "areaServed": ["Global"]
-            },
-            {
-              "@type": "PriceSpecification",
-              "price": "45000-135000",
-              "priceCurrency": "INR",
-              "availability": "https://schema.org/InStock",
-              "areaServed": ["IN"]
-            }
-          ],
-          "url": "https://swastikdharpure.github.io/Portfolio/#contact"
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "API Development",
-            "serviceType": "Software Development",
-            "category": "API & Backend",
-            "description": "RESTful API development and integration for global clients."
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "React.js Frontend Development",
-            "serviceType": "Frontend Development",
-            "category": "Web Development",
-            "description": "Modern responsive frontend development using React.js."
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "SQL Server Database Solutions",
-            "serviceType": "Database Development",
-            "category": "Software Development",
-            "description": "Database design, optimization, and queries for global clients."
-          }
-        }
-      ],
-      "hasPart": [
-        {
-          "@type": "CreativeWork",
-          "name": "Thane Metro Rail Website",
-          "url": "https://thanemetrorail.com/",
-          "description": "Developed a complete ASP.NET MVC website with API integration for Metro Rail Thane project."
-        },
-        {
-          "@type": "CreativeWork",
-          "name": "E-learning and NGO Platform",
-          "url": "https://littera.in/",
-          "description": "Built an ASP.NET MVC web application with SQL Server backend and REST API integration."
         }
       ],
       "review": [
@@ -261,36 +188,100 @@
       "keywords": "Freelance, ASP.NET MVC, C#, SQL Server, Remote Developer, React.js, Web Development, API Integration"
     },
     {
-      "@type": "WebSite",
-      "@id": "https://swastikdharpure.github.io/Portfolio/#website",
-      "name": "Swastik Dharpure Portfolio",
+      "@type": "LocalBusiness",
+      "@id": "https://swastikdharpure.github.io/Portfolio/#localbusiness",
+      "name": "Swastik Dharpure Freelance Services",
+      "image": "https://swastikdharpure.github.io/Portfolio/assets/img/my-profile-img.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Nagpur",
+        "addressRegion": "Maharashtra",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "21.1458",
+        "longitude": "79.0882"
+      },
+      "telephone": "+91-9689163020",
       "url": "https://swastikdharpure.github.io/Portfolio/",
-      "description": "Portfolio of Swastik Dharpure, a .NET Developer & Freelancer from Nagpur, India with expertise in ASP.NET MVC, SQL Server, APIs, and scalable web applications.",
-      "publisher": { "@id": "https://swastikdharpure.github.io/Portfolio/#person" },
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://swastikdharpure.github.io/Portfolio/?q={search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
-    },
-    {
-      "@type": "WebPage",
-      "@id": "https://swastikdharpure.github.io/Portfolio/#webpage",
-      "url": "https://swastikdharpure.github.io/Portfolio/",
-      "name": "Swastik Dharpure Portfolio",
-      "isPartOf": { "@id": "https://swastikdharpure.github.io/Portfolio/#website" },
-      "about": { "@id": "https://swastikdharpure.github.io/Portfolio/#person" },
-      "description": "Official portfolio website of Swastik Dharpure, .NET Developer & Freelancer from Nagpur, India."
-    },
-    {
-      "@type": "Organization",
-      "name": "Swastik Dharpure",
-      "url": "https://swastikdharpure.github.io/Portfolio/",
-      "logo": "https://swastikdharpure.github.io/Portfolio/assets/img/my-profile-img.jpg",
       "sameAs": [
         "https://www.linkedin.com/in/swastikdharpure",
         "https://github.com/swastikdharpure"
-        
+      ],
+      "serviceArea": [
+        { "@type": "Place", "name": "India" },
+        { "@type": "Place", "name": "Global" }
+      ]
+    },
+    {
+      "@type": "Service",
+      "name": "ASP.NET MVC Web Development",
+      "description": "Custom web applications using ASP.NET MVC and C# for global clients.",
+      "provider": { "@id": "https://swastikdharpure.github.io/Portfolio/#person" },
+      "offers": {
+        "@type": "Offer",
+        "priceSpecification": [
+          {
+            "@type": "PriceSpecification",
+            "price": "500-1500",
+            "priceCurrency": "USD",
+            "areaServed": ["Global"]
+          },
+          {
+            "@type": "PriceSpecification",
+            "price": "45000-135000",
+            "priceCurrency": "INR",
+            "areaServed": ["IN"]
+          }
+        ],
+        "url": "https://swastikdharpure.github.io/Portfolio/#contact"
+      }
+    },
+    {
+      "@type": "Service",
+      "name": "API Development",
+      "description": "RESTful API development and integration for global clients.",
+      "provider": { "@id": "https://swastikdharpure.github.io/Portfolio/#person" }
+    },
+    {
+      "@type": "Service",
+      "name": "React.js Frontend Development",
+      "description": "Modern responsive frontend development using React.js.",
+      "provider": { "@id": "https://swastikdharpure.github.io/Portfolio/#person" }
+    },
+    {
+      "@type": "Service",
+      "name": "SQL Server Database Solutions",
+      "description": "Database design, optimization, and queries for global clients.",
+      "provider": { "@id": "https://swastikdharpure.github.io/Portfolio/#person" }
+    },
+    {
+      "@type": "ContactAction",
+      "target": "mailto:swastikdharpure@gmail.com",
+      "name": "Email Swastik Dharpure"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://swastikdharpure.github.io/Portfolio/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://swastikdharpure.github.io/Portfolio/#services"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Contact",
+          "item": "https://swastikdharpure.github.io/Portfolio/#contact"
+        }
       ]
     }
   ]
