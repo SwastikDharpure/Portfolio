@@ -67,7 +67,6 @@
 
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
-<!-- Structured Data (JSON-LD) -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -103,8 +102,7 @@
         "email": "swastikdharpure@gmail.com",
         "telephone": "+91-9689163020",
         "areaServed": ["IN","Global"],
-        "availableLanguage": ["English", "Hindi", "Marathi"],
-        "availability": "Remote projects accepted"
+        "availableLanguage": ["English", "Hindi", "Marathi"]
       },
       "skills": [
         "ASP.NET MVC",
@@ -116,18 +114,8 @@
         "Freelance Web Development"
       ],
       "award": [
-        {
-          "@type": "Award",
-          "name": "Best .NET Developer Award - ITCRAFT 2024",
-          "awarder": { "@type": "Organization", "name": "ITCRAFT" },
-          "dateReceived": "2024"
-        },
-        {
-          "@type": "Award",
-          "name": "Top Freelancer Badge - Upwork 2025",
-          "awarder": { "@type": "Organization", "name": "Upwork" },
-          "dateReceived": "2025"
-        }
+        "Best .NET Developer Award - ITCRAFT 2024",
+        "Top Freelancer Badge - Upwork 2025"
       ],
       "hasCredential": [
         {
@@ -161,26 +149,29 @@
         "ratingValue": "5",
         "reviewCount": "2"
       },
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Do you work remotely?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, I accept freelance and remote projects globally."
+      "faqPage": {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Do you work remotely?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, I accept freelance and remote projects globally."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which technologies do you specialize in?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ASP.NET MVC, C#, SQL Server, React.js, REST APIs, and scalable web applications."
+            }
           }
-        },
-        {
-          "@type": "Question",
-          "name": "Which technologies do you specialize in?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "ASP.NET MVC, C#, SQL Server, React.js, REST APIs, and scalable web applications."
-          }
-        }
-      ],
+        ]
+      },
       "potentialAction": {
-        "@type": "ReserveAction",
+        "@type": "ContactAction",
         "target": "https://swastikdharpure.github.io/Portfolio/#contact",
         "name": "Book a Freelance Project"
       },
@@ -225,14 +216,12 @@
           {
             "@type": "PriceSpecification",
             "price": "500-1500",
-            "priceCurrency": "USD",
-            "areaServed": ["Global"]
+            "priceCurrency": "USD"
           },
           {
             "@type": "PriceSpecification",
             "price": "45000-135000",
-            "priceCurrency": "INR",
-            "areaServed": ["IN"]
+            "priceCurrency": "INR"
           }
         ],
         "url": "https://swastikdharpure.github.io/Portfolio/#contact"
@@ -255,11 +244,6 @@
       "name": "SQL Server Database Solutions",
       "description": "Database design, optimization, and queries for global clients.",
       "provider": { "@id": "https://swastikdharpure.github.io/Portfolio/#person" }
-    },
-    {
-      "@type": "ContactAction",
-      "target": "mailto:swastikdharpure@gmail.com",
-      "name": "Email Swastik Dharpure"
     },
     {
       "@type": "BreadcrumbList",
@@ -287,7 +271,7 @@
   ]
 }
 </script>
-<!-- Structured Data (JSON-LD) end -->
+
 
 
 
